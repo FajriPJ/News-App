@@ -1,4 +1,4 @@
-import  {NewsDispatchTypes, NewsType, NEWS_SUCCESS, NEWS_FAIL, NEWS_LOADING} from "../actions/newsActionType"
+import  {NewsDispatchTypes, NewsType, NEWS_SUCCESS, NEWS_FAIL, NEWS_LOADING} from "../actions/actionType/newsActionType"
 
 interface NewsState {
   loading: boolean,

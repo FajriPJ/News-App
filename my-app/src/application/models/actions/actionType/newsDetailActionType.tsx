@@ -26,7 +26,6 @@ export interface NewsDetailFail {
 export interface NewsDetailSuccess {
   type: typeof NEWS_DETAIL_SUCCESS,
   payload: NewsDetailType 
-
 }
 
 export type NewsDetailDispatchTypes = NewsDetailLoading | NewsDetailFail | NewsDetailSuccess

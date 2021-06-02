@@ -3,9 +3,9 @@ import {
   Container, Row, 
 } from 'reactstrap';
 import {useDispatch, useSelector} from "react-redux";
-import {RootStore} from "../store"
-import { GetNews } from "../store/actions/newsAction"
-import { Loading, ArticleList } from "../components"
+import {RootStore} from "../../../application/store"
+import { GetNews } from "../../../application/models/actions/action/newsAction"
+import { Loading, ArticleList } from "../../../infrastructure/components"
 
 export default function News() {
 

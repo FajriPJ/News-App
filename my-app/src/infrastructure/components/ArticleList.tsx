@@ -5,7 +5,7 @@ import {
 } from 'reactstrap';
 import { useHistory } from 'react-router-dom'
 import { useDispatch } from "react-redux";
-import { GetNewsDetail } from '../store/actions/newsDetailAction'
+import { GetNewsDetail } from '../../application/models/actions/action/newsDetailAction'
 
 export default function ArticleList(props: any) {
   const dispatch = useDispatch();
@@ -28,7 +28,7 @@ export default function ArticleList(props: any) {
             <CardLink style={{textDecoration: "none"}} onClick={() =>toDetail(props.title)}>Read more...</CardLink>
           </Col>
           <Col xs="4">
-            <CardImg src={props.urlToImage} style={{height: "70%", width: "100%"}}/>
+            <CardImg src={props.urlToImage} style={{height: "150px", width: "150px"}}/>
           </Col>
         </Row>
       </CardBody>

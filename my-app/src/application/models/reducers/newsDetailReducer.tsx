@@ -1,4 +1,5 @@
-import  {NewsDetailDispatchTypes, NewsDetailType, NEWS_DETAIL_SUCCESS, NEWS_DETAIL_FAIL, NEWS_DETAIL_LOADING} from "../actions/newsDetailActionType"
+
+import  {NewsDetailDispatchTypes, NewsDetailType, NEWS_DETAIL_SUCCESS, NEWS_DETAIL_FAIL, NEWS_DETAIL_LOADING} from "../actions/actionType/newsDetailActionType"
 
 interface NewsDetailState {
   loading: boolean,
