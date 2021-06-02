@@ -7,6 +7,7 @@ import { RootStore } from "../../../application/store"
 import { useParams } from "react-router-dom";
 import { GetNewsDetail } from "../../../application/models/actions/action/newsDetailAction"
 import { NavigasiBar, Loading, Error } from "../../../infrastructure/components"
+import { changeDateFormat } from "../../../application/helpers"
 
 export default function NewsDetail() {
   const {newsDetail, loading} = useSelector((state: RootStore)=> state.newsDetailReducer);
@@ -35,7 +36,7 @@ export default function NewsDetail() {
           <Row g-0>
             <Col col-2>
               <CardImg style={{height: "60vh", width: "40vw"}} src={newsDetail?.articles[0]?.urlToImage} alt="Card image cap"/>
-              <CardText className="card-text text-" style={{fontSize: "10px"}}>Published date: {newsDetail?.articles[0]?.publishedAt.slice(0,10)}</CardText>
+              <CardText className="card-text text-" style={{fontSize: "10px"}}>Published date: {changeDateFormat(newsDetail?.articles[0]?.publishedAt)}</CardText>
             </Col>
             <Col col-10>
               <CardBody>
